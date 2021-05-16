@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "youtube-api-proxy",
   "version": "0.0.0",
   "description": "",
   "main": "build/src/index.js",
@@ -10,7 +10,7 @@
   "license": "Apache-2.0",
   "keywords": [],
   "scripts": {
-    "start": "functions-framework --source=build/src/ --target=helloWorld",
+    "start": "functions-framework --source=build/src/ --target=youtubeAPI",
     "watch": "env-cmd concurrently \"tsc -w\" \"nodemon --watch ./build/ --exec npm run start\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "gts lint",
@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@google-cloud/functions-framework": "^1.7.1",
+    "axios": "^0.21.1",
     "env-cmd": "^10.1.0"
   }
 }
